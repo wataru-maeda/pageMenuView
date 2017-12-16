@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PageMenuViewDelegate {
+  
+  var pageMenu: PageMenuView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,11 +37,27 @@ class ViewController: UIViewController {
     
     // Init Page Menu with view controllers and UI option
     pageMenu = PageMenuView(viewControllers: viewControllers, option: option)
+    pageMenu.delegate = self
     view.addSubview(pageMenu)
   }
   
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
-    pageMenu.frame = CGRect(x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height - 20)
+    if UIDevice.current.orientation == .portrait {
+      pageMenu.frame = CGRect(
+        x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height - 20)
+    } else {
+      pageMenu.frame = CGRect(
+        x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+    }
+  }
+  
+  func willMoveToPage(_ pageMenu: PageMenuView, from viewController: UIViewController, index currentViewControllerIndex: Int) {
+    print("---------")
+    print(viewController.title!)
+  }
+  
+  func didMoveToPage(_ pageMenu: PageMenuView, to viewController: UIViewController, index currentViewControllerIndex: Int) {
+    print(viewController.title!)
   }
 }
