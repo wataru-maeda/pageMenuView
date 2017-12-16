@@ -12,10 +12,10 @@ class ChildViewController: UIViewController {
   
   let titleLabel: UILabel = {
     let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .black
     label.font = UIFont.systemFont(ofSize: 24)
     label.textAlignment = .center
+    label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
   

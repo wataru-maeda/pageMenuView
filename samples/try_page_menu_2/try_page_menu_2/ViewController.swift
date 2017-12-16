@@ -15,7 +15,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Presenting View Contollers
+    // Init View Contollers
     let viewController1 = ChildViewController()
     viewController1.title = "Child View 1"
     let viewController2 = ChildViewController()
@@ -23,12 +23,15 @@ class ViewController: UIViewController {
     let viewController3 = ChildViewController()
     viewController3.title = "Child View 3"
     
-    // Added to the array
+    // Added to array
     let viewControllers = [viewController1, viewController2, viewController3]
     
-    // Init Page Menu
-    pageMenu = PageMenuView(viewControllers: viewControllers,
-                            option: PageMenuOption(frame: CGRect(x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height - 20)))
+    // Page menu option
+    let option = PageMenuOption(
+      frame: CGRect(x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height - 20))
+    
+    // Init Page Menu with option
+    pageMenu = PageMenuView(viewControllers: viewControllers, option: option)
     view.addSubview(pageMenu)
   }
   
