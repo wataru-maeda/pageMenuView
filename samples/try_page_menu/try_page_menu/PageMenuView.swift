@@ -57,7 +57,7 @@ struct PageMenuOption {
 // MARK: - Page Menu
 
 class PageMenuView: UIView {
-
+  
   var delegate: PageMenuViewDelegate?
   
   fileprivate let cellId = "PageMenuCell"
@@ -105,8 +105,8 @@ extension PageMenuView: UIScrollViewDelegate {
     menuScrollView.isPagingEnabled = false
     menuScrollView.showsHorizontalScrollIndicator = false
     menuScrollView.frame = CGRect(x: 0, y: 0,
-                              width: frame.size.width,
-                              height: option.menuItemHeight)
+                                  width: frame.size.width,
+                                  height: option.menuItemHeight)
   }
   
   fileprivate func setupMenuButtons() {
@@ -185,12 +185,12 @@ extension PageMenuView: UIScrollViewDelegate {
     guard let menuButton = menuScrollView.viewWithTag(menuButtonIndex) as? UIButton else { return }
     for subview in menuScrollView.subviews {
       if let button = subview as? UIButton {
-        button.setTitleColor(.lightGray, for: .normal)
+        button.setTitleColor(option.menuTitleColorNormal, for: .normal)
         button.isSelected = false
       }
     }
     menuButton.isSelected = true
-    menuButton.setTitleColor(.darkGray, for: .normal)
+    menuButton.setTitleColor(option.menuTitleColorSelected, for: .normal)
   }
   
   fileprivate func updateMenuScrollOffsetIfNeeded(menuButtonIndex: Int) {

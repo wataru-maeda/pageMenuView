@@ -185,12 +185,12 @@ extension PageMenuView: UIScrollViewDelegate {
     guard let menuButton = menuScrollView.viewWithTag(menuButtonIndex) as? UIButton else { return }
     for subview in menuScrollView.subviews {
       if let button = subview as? UIButton {
-        button.setTitleColor(.lightGray, for: .normal)
+        button.setTitleColor(option.menuTitleColorNormal, for: .normal)
         button.isSelected = false
       }
     }
     menuButton.isSelected = true
-    menuButton.setTitleColor(.darkGray, for: .normal)
+    menuButton.setTitleColor(option.menuTitleColorSelected, for: .normal)
   }
   
   fileprivate func updateMenuScrollOffsetIfNeeded(menuButtonIndex: Int) {
