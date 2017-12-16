@@ -8,7 +8,7 @@
 
 ## Installation
 
-Add the [PageMenuView.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drap the file into your project).
+Add the [PageMenuView.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drop the file into your project).
 
 ## Usage
 
@@ -68,7 +68,7 @@ func didMoveToPage(_ pageMenu: PageMenuView, to viewController: UIViewController
 
 ## Update menu title
 
-You can access `updateMenuTitle` function like bellow.
+Sometimes, we need to update menu title after presented page menu. You can update title whenever you want by calling the method `updateMenuTitle`
 
 ```Swift
 pageMenu.updateMenuTitle(title: "New Title!", viewControllerIndex: 0)
@@ -76,7 +76,7 @@ pageMenu.updateMenuTitle(title: "New Title!", viewControllerIndex: 0)
 
 # Customization
 
-Let's me pick up some of example. So Here is a defailt page menu appearance if you don't change any default value in the option.
+Let's me pick up some of the examples. So Here is a default page menu appearance if you don't change any default value in the option.
 
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-4.png">
 
