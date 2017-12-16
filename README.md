@@ -3,11 +3,11 @@
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-1.gif" width="350">
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-2.gif">
 
-# Installation
+## Installation
 
 Add the [PageMenuView.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drop the file into your project).
 
-# Usage
+## Usage
 
 1. Initialize your viewController class with title, then add the viewControllers to the array
 
@@ -48,7 +48,7 @@ Result may looks like below. [Sample Code](https://github.com/WataruMaeda/pageMe
 
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-3.gif" width="200">
 
-# Optional - Delegate Methods
+## Optional - Delegate Methods
 
 1. Add `PageMenuViewDelegate` to your ViewController class
 
@@ -69,7 +69,7 @@ func willMoveToPage(_ pageMenu: PageMenuView, from viewController: UIViewControl
 func didMoveToPage(_ pageMenu: PageMenuView, to viewController: UIViewController, index currentViewControllerIndex: Int) {}
 ```
 
-# Update menu title
+## Update menu title
 
 Sometimes, we need to update menu title after presented page menu. You can update title whenever you want by calling the method `updateMenuTitle`
 
@@ -77,7 +77,7 @@ Sometimes, we need to update menu title after presented page menu. You can updat
 pageMenu.updateMenuTitle(title: "New Title!", viewControllerIndex: 0)
 ```
 
-# Customization
+## Customization
 
 Let's me pick up some of the examples. So Here is a default page menu appearance if you don't change any default value in the option.
 
@@ -134,3 +134,9 @@ Lastly, bellow table shows all option property of page menu view.
 | menuTitleColorSelected | UIColor | Title color (Selected state)  | black | optional |
 | menuIndicatorHeight | CGFloat | Height of the menu underline indicator  | 3px | optional |
 | menuIndicatorColor | UIColor | Color of the menu underline indicator  | darkGray | optional |
+
+## Author
+Wataru Maeda, w.maeda.ca@gmail.com
+
+## License
+PageMenuView is available under the MIT license. See the LICENSE file for more info.
