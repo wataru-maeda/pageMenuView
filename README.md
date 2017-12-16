@@ -1,27 +1,30 @@
 # Page Menu View
 
-
-# Demos
-
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-1.gif" width="350">
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-2.gif">
 
-## Installation
+# Installation
 
 Add the [PageMenuView.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drop the file into your project).
 
-## Usage
+# Usage
 
 1. Initialize your viewController class with title, then add the viewControllers to the array
 
 ```Swift
 // Init View Contollers
-let viewController1 = YourViewController()
+let viewController1 = UIViewController()
+viewController1.view.backgroundColor = .blue
 viewController1.title = "Child View 1"
-let viewController2 = YourViewController()
+
+let viewController2 = UIViewController()
+viewController2.view.backgroundColor = .green
 viewController2.title = "Child View 2"
-let viewController3 = YourViewController()
+
+let viewController3 = UIViewController()
+viewController3.view.backgroundColor = .yellow
 viewController3.title = "Child View 3"
+
 // Add to array
 let viewControllers = [viewController1, viewController2, viewController3]
 ```
@@ -41,11 +44,11 @@ let pageMenu = PageMenuView(viewControllers: viewControllers, option: option)
 view.addSubview(pageMenu)
 ```
 
-Result may looks like below
+Result may looks like below. [Sample Code](https://github.com/WataruMaeda/pageMenuView/blob/master/samples/try_page_menu_2/try_page_menu_2/ViewController.swift)
 
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-3.gif" width="200">
 
-## Optional - Delegate Methods
+# Optional - Delegate Methods
 
 1. Add `PageMenuViewDelegate` to your ViewController class
 
@@ -66,7 +69,7 @@ func willMoveToPage(_ pageMenu: PageMenuView, from viewController: UIViewControl
 func didMoveToPage(_ pageMenu: PageMenuView, to viewController: UIViewController, index currentViewControllerIndex: Int) {}
 ```
 
-## Update menu title
+# Update menu title
 
 Sometimes, we need to update menu title after presented page menu. You can update title whenever you want by calling the method `updateMenuTitle`
 
@@ -107,13 +110,13 @@ Here is how to change colors inside page menu view
 var option = PageMenuOption(frame: CGRect(
   x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height - 20))
 option.menuItemWidth = view.frame.size.width / 3
-option.menuItemBackgroundColorNormal = offColor
-option.menuItemBackgroundColorSelected = keyColor
+option.menuItemBackgroundColorNormal = UIColor(red:0.388, green:0.424, blue:0.467, alpha:1)
+option.menuItemBackgroundColorSelected = UIColor(red:0.227, green:0.678, blue:0.851, alpha:1)
 option.menuTitleMargin = 0
 option.menuTitleColorNormal = .lightGray
 option.menuTitleColorSelected = .white
 option.menuIndicatorHeight = 6
-option.menuIndicatorColor = indicatorColor
+option.menuIndicatorColor = UIColor(red:0.969, green:0.424, blue:0.510, alpha:1)
 ```
 
 Lastly, bellow table shows all option property of page menu view.
