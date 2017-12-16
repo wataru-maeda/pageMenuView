@@ -13,7 +13,6 @@
 		A5380FDD1FE4944200D15392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5380FDC1FE4944200D15392 /* Assets.xcassets */; };
 		A5380FE01FE4944200D15392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5380FDE1FE4944200D15392 /* LaunchScreen.storyboard */; };
 		A5380FE81FE4948B00D15392 /* PageMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5380FE71FE4948B00D15392 /* PageMenuView.swift */; };
-		A5380FEA1FE494F100D15392 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5380FE91FE494F100D15392 /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		A5380FDF1FE4944200D15392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5380FE11FE4944200D15392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5380FE71FE4948B00D15392 /* PageMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuView.swift; sourceTree = "<group>"; };
-		A5380FE91FE494F100D15392 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				A5380FD51FE4944200D15392 /* AppDelegate.swift */,
 				A5380FE71FE4948B00D15392 /* PageMenuView.swift */,
 				A5380FD71FE4944200D15392 /* ViewController.swift */,
-				A5380FE91FE494F100D15392 /* ChildViewController.swift */,
 				A5380FD91FE4944200D15392 /* Main.storyboard */,
 				A5380FDC1FE4944200D15392 /* Assets.xcassets */,
 				A5380FDE1FE4944200D15392 /* LaunchScreen.storyboard */,
@@ -143,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5380FD81FE4944200D15392 /* ViewController.swift in Sources */,
-				A5380FEA1FE494F100D15392 /* ChildViewController.swift in Sources */,
 				A5380FE81FE4948B00D15392 /* PageMenuView.swift in Sources */,
 				A5380FD61FE4944200D15392 /* AppDelegate.swift in Sources */,
 			);

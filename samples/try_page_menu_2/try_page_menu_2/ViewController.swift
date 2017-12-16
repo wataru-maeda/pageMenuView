@@ -9,21 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  var pageMenu: PageMenuView!
-  let keyColor = UIColor(red:0.227, green:0.678, blue:0.851, alpha:1.000)
-  let offColor = UIColor(red:0.388, green:0.424, blue:0.467, alpha:1.000)
-  let indicatorColor = UIColor(red:0.969, green:0.424, blue:0.510, alpha:1.000)
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Init View Contollers
-    let viewController1 = ChildViewController()
+    let viewController1 = UIViewController()
+    viewController1.view.backgroundColor = .blue
     viewController1.title = "Child View 1"
-    let viewController2 = ChildViewController()
+    
+    let viewController2 = UIViewController()
+    viewController2.view.backgroundColor = .green
     viewController2.title = "Child View 2"
-    let viewController3 = ChildViewController()
+    
+    let viewController3 = UIViewController()
+    viewController3.view.backgroundColor = .yellow
     viewController3.title = "Child View 3"
     
     // Add to array
