@@ -5,7 +5,7 @@
 
 ## Installation
 
-Add the [PageMenuView.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drop the file into your project).
+Add the [PageMenuView.swift](https://github.com/WataruMaeda/pageMenuView/blob/master/PageMenuView/PageMenuView.swift) to your project manually (drag & drop the file into your project).
 
 ## Usage
 
@@ -79,7 +79,7 @@ pageMenu.updateMenuTitle(title: "New Title!", viewControllerIndex: 0)
 
 ## Customization
 
-Let's me pick up some of the examples. So Here is a default page menu appearance if you don't change any default value in the option.
+Here is a default page menu appearance if you don't change any default value in the option.
 
 <img src="https://github.com/WataruMaeda/pageMenuView/blob/master/screenshots/sample-4.png">
 
